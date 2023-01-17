@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Auth\SessionsController;
 use App\Http\Controllers\LandingPageController;
 use Illuminate\Support\Facades\Route;
 
@@ -15,3 +16,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', LandingPageController::class);
+
+Route::get('signin', [SessionsController::class, 'create'])->name('autb.sessions.create');
+Route::post('signin', [SessionsController::class, 'store'])->name('auth.sessions.store');
