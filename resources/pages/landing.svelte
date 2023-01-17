@@ -1,7 +1,7 @@
 <script>
-    import Button from "$components/Button.svelte"
+    import { inertia } from "@inertiajs/svelte";
 </script>
 
 Hello
 
-<Button>Hello</Button>
+<a href="/signin" use:inertia>Sign in</a>
