@@ -1,0 +1,21 @@
+{
+    "root": true,
+    "env": {
+        "browser": true,
+        "node": true
+    },
+    "extends": ["eslint:recommended"],
+    "parserOptions": {
+        "ecmaVersion": 2018,
+        "sourceType": "module",
+        "extraFileExtensions": [".svelte"]
+    },
+    "rules": {},
+    "plugins": ["svelte3"],
+    "overrides": [
+        {
+            "files": ["*.svelte"],
+            "processor": "svelte3/svelte3"
+        }
+    ]
+}
