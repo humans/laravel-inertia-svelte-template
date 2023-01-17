@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 use App\Http\Controllers\Auth\SessionsController;
 use App\Http\Controllers\LandingPageController;
 use Illuminate\Support\Facades\Route;
